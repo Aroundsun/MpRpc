@@ -125,6 +125,12 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "src/CMakeLists.txt"
+		},
+		{
+			"path" : "example/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
