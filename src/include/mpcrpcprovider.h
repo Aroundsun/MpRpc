@@ -8,12 +8,25 @@
 #include<string>
 #include<unordered_map>
 
+#include"logger.h"
+#include"mprpcapplication.h"
+
 //发布Rpc 服务的网络对象类
 class MprpcProvider
 {
 public:
-    MprpcProvider();
-    ~MprpcProvider();
+    MprpcProvider(){};
+    ~MprpcProvider(){};
+    MprpcProvider(const MprpcProvider&) = delete;
+    MprpcProvider(MprpcProvider&&) = delete;
+    MprpcProvider& operator=(const MprpcProvider&) = delete;
+    MprpcProvider& operator=(MprpcProvider&&) = delete;
+
+    //为外部发布服务对象
+    void NotifyService(google::protobuf::Service* );
+
+    //启动服务
+    void Run();
 private:
     //服务信息
     struct ServiceInfo

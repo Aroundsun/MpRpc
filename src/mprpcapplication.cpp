@@ -11,8 +11,30 @@ void ShowArgHelp()
 //初始化框架
 void MprpcApplication::init(int args,char **argv)
 {
+    if(args <2)
+    {
+        ShowArgHelp();
+        exit(EXIT_FAILURE);
+    }
+    int opt = 0;
+    std::string config_file;
+    while(opt = getopt(args,argv,"i:") != -1)
+    {
+        switch (opt)
+        {
+        case 'i':
+            config_file = optarg;
+            break;
+        case '?':
+        case ':':
+            ShowArgHelp();
+            exit(EXIT_FAILURE);
+            break;
+        }
+    }
 
-    
+    //加载配置文件
+    m_config.LoadConfigFile(config_file);
 }
 //获取单例对象
 MprpcApplication& MprpcApplication::GetInstance()
