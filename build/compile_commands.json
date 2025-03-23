@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/mprpcapplication.cpp.o -c /home/xhy/mprpc/src/mprpcapplication.cpp",
+  "file": "/home/xhy/mprpc/src/mprpcapplication.cpp",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/mprpcconfig.cpp.o -c /home/xhy/mprpc/src/mprpcconfig.cpp",
+  "file": "/home/xhy/mprpc/src/mprpcconfig.cpp",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o -c /home/xhy/mprpc/src/mprpcheader.pb.cc",
+  "file": "/home/xhy/mprpc/src/mprpcheader.pb.cc",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/mprpcprovider.cpp.o -c /home/xhy/mprpc/src/mprpcprovider.cpp",
+  "file": "/home/xhy/mprpc/src/mprpcprovider.cpp",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/mprpcchannel.cpp.o -c /home/xhy/mprpc/src/mprpcchannel.cpp",
+  "file": "/home/xhy/mprpc/src/mprpcchannel.cpp",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/mprpccontroller.cpp.o -c /home/xhy/mprpc/src/mprpccontroller.cpp",
+  "file": "/home/xhy/mprpc/src/mprpccontroller.cpp",
+  "output": "src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/src",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/mprpc.dir/logger.cpp.o -c /home/xhy/mprpc/src/logger.cpp",
+  "file": "/home/xhy/mprpc/src/logger.cpp",
+  "output": "src/CMakeFiles/mprpc.dir/logger.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/example/callee",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/xhy/mprpc/example/callee/userservice.cpp",
+  "file": "/home/xhy/mprpc/example/callee/userservice.cpp",
+  "output": "example/callee/CMakeFiles/provider.dir/userservice.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/example/callee",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/xhy/mprpc/example/user.pb.cc",
+  "file": "/home/xhy/mprpc/example/user.pb.cc",
+  "output": "example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/example/caller",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/consumer.dir/calluserservice.cpp.o -c /home/xhy/mprpc/example/caller/calluserservice.cpp",
+  "file": "/home/xhy/mprpc/example/caller/calluserservice.cpp",
+  "output": "example/caller/CMakeFiles/consumer.dir/calluserservice.cpp.o"
+},
+{
+  "directory": "/home/xhy/mprpc/build/example/caller",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/xhy/mprpc/src/include -I/home/xhy/mprpc/example -g -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/xhy/mprpc/example/user.pb.cc",
+  "file": "/home/xhy/mprpc/example/user.pb.cc",
+  "output": "example/caller/CMakeFiles/consumer.dir/__/user.pb.cc.o"
+}
+]

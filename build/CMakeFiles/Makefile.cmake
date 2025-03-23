@@ -12,6 +12,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.3/CMakeSystem.cmake"
   "/home/xhy/mprpc/example/CMakeLists.txt"
+  "/home/xhy/mprpc/example/callee/CMakeLists.txt"
+  "/home/xhy/mprpc/example/caller/CMakeLists.txt"
   "/home/xhy/mprpc/src/CMakeLists.txt"
   "/usr/share/cmake-3.30/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.30/Modules/CMakeCXXInformation.cmake"
@@ -44,8 +46,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/callee/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/caller/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/mprpc.dir/DependInfo.cmake"
+  "example/callee/CMakeFiles/provider.dir/DependInfo.cmake"
+  "example/caller/CMakeFiles/consumer.dir/DependInfo.cmake"
   )

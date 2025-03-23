@@ -39,7 +39,7 @@ void MprpcApplication::init(int args,char **argv)
 //获取单例对象
 MprpcApplication& MprpcApplication::GetInstance()
 {
-    MprpcApplication mprpcapp;
+    static MprpcApplication mprpcapp;
     return mprpcapp;
 }
 //获取配置对象

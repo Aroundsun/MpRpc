@@ -116,6 +116,45 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named mprpc
+
+# Build rule for target.
+mprpc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mprpc
+.PHONY : mprpc
+
+# fast build rule for target.
+mprpc/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
+.PHONY : mprpc/fast
+
+#=============================================================================
+# Target rules for targets named provider
+
+# Build rule for target.
+provider: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 provider
+.PHONY : provider
+
+# fast build rule for target.
+provider/fast:
+	$(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/provider.dir/build.make example/callee/CMakeFiles/provider.dir/build
+.PHONY : provider/fast
+
+#=============================================================================
+# Target rules for targets named consumer
+
+# Build rule for target.
+consumer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 consumer
+.PHONY : consumer
+
+# fast build rule for target.
+consumer/fast:
+	$(MAKE) $(MAKESILENT) -f example/caller/CMakeFiles/consumer.dir/build.make example/caller/CMakeFiles/consumer.dir/build
+.PHONY : consumer/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +163,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... consumer"
+	@echo "... mprpc"
+	@echo "... provider"
 .PHONY : help
 
 

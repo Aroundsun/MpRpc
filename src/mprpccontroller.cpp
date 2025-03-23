@@ -2,19 +2,40 @@
 
 
 
-void Reset();
+void MprpcController::Reset()
+{
 
-  bool Failed() const;
+}
 
-  std::string ErrorText() const;
+  bool MprpcController::Failed() const
+  {
+
+  }
+
+  std::string MprpcController::ErrorText() const
+  {
+
+  }
 
 
-  void StartCancel();
+  void MprpcController::StartCancel()
+  {
 
-  void SetFailed(const std::string& reason);
+  }
+
+  void MprpcController::SetFailed(const std::string& reason)
+  {
+
+  }
 
  
-  bool IsCanceled() const;
+  bool MprpcController::IsCanceled() const
+  {
+
+  }
 
 
-  void NotifyOnCancel(google::protobuf::Closure* callback);
+  void MprpcController::NotifyOnCancel(google::protobuf::Closure* callback)
+  {
+
+  }

@@ -42,3 +42,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/aarch64-linux-gnu-objdump")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/xhy/mprpc/build/example/callee/cmake_install.cmake")
+  include("/home/xhy/mprpc/build/example/caller/cmake_install.cmake")
+
+endif()
+

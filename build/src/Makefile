@@ -116,6 +116,188 @@ depend:
 	cd /home/xhy/mprpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/mprpc.dir/rule:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
+.PHONY : src/CMakeFiles/mprpc.dir/rule
+
+# Convenience name for target.
+mprpc: src/CMakeFiles/mprpc.dir/rule
+.PHONY : mprpc
+
+# fast build rule for target.
+mprpc/fast:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
+.PHONY : mprpc/fast
+
+logger.o: logger.cpp.o
+.PHONY : logger.o
+
+# target to build an object file
+logger.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cpp.o
+.PHONY : logger.cpp.o
+
+logger.i: logger.cpp.i
+.PHONY : logger.i
+
+# target to preprocess a source file
+logger.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cpp.i
+.PHONY : logger.cpp.i
+
+logger.s: logger.cpp.s
+.PHONY : logger.s
+
+# target to generate assembly for a file
+logger.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cpp.s
+.PHONY : logger.cpp.s
+
+mprpcapplication.o: mprpcapplication.cpp.o
+.PHONY : mprpcapplication.o
+
+# target to build an object file
+mprpcapplication.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o
+.PHONY : mprpcapplication.cpp.o
+
+mprpcapplication.i: mprpcapplication.cpp.i
+.PHONY : mprpcapplication.i
+
+# target to preprocess a source file
+mprpcapplication.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.i
+.PHONY : mprpcapplication.cpp.i
+
+mprpcapplication.s: mprpcapplication.cpp.s
+.PHONY : mprpcapplication.s
+
+# target to generate assembly for a file
+mprpcapplication.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.s
+.PHONY : mprpcapplication.cpp.s
+
+mprpcchannel.o: mprpcchannel.cpp.o
+.PHONY : mprpcchannel.o
+
+# target to build an object file
+mprpcchannel.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o
+.PHONY : mprpcchannel.cpp.o
+
+mprpcchannel.i: mprpcchannel.cpp.i
+.PHONY : mprpcchannel.i
+
+# target to preprocess a source file
+mprpcchannel.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.i
+.PHONY : mprpcchannel.cpp.i
+
+mprpcchannel.s: mprpcchannel.cpp.s
+.PHONY : mprpcchannel.s
+
+# target to generate assembly for a file
+mprpcchannel.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.s
+.PHONY : mprpcchannel.cpp.s
+
+mprpcconfig.o: mprpcconfig.cpp.o
+.PHONY : mprpcconfig.o
+
+# target to build an object file
+mprpcconfig.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o
+.PHONY : mprpcconfig.cpp.o
+
+mprpcconfig.i: mprpcconfig.cpp.i
+.PHONY : mprpcconfig.i
+
+# target to preprocess a source file
+mprpcconfig.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.i
+.PHONY : mprpcconfig.cpp.i
+
+mprpcconfig.s: mprpcconfig.cpp.s
+.PHONY : mprpcconfig.s
+
+# target to generate assembly for a file
+mprpcconfig.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.s
+.PHONY : mprpcconfig.cpp.s
+
+mprpccontroller.o: mprpccontroller.cpp.o
+.PHONY : mprpccontroller.o
+
+# target to build an object file
+mprpccontroller.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o
+.PHONY : mprpccontroller.cpp.o
+
+mprpccontroller.i: mprpccontroller.cpp.i
+.PHONY : mprpccontroller.i
+
+# target to preprocess a source file
+mprpccontroller.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.i
+.PHONY : mprpccontroller.cpp.i
+
+mprpccontroller.s: mprpccontroller.cpp.s
+.PHONY : mprpccontroller.s
+
+# target to generate assembly for a file
+mprpccontroller.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.s
+.PHONY : mprpccontroller.cpp.s
+
+mprpcheader.pb.o: mprpcheader.pb.cc.o
+.PHONY : mprpcheader.pb.o
+
+# target to build an object file
+mprpcheader.pb.cc.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o
+.PHONY : mprpcheader.pb.cc.o
+
+mprpcheader.pb.i: mprpcheader.pb.cc.i
+.PHONY : mprpcheader.pb.i
+
+# target to preprocess a source file
+mprpcheader.pb.cc.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.i
+.PHONY : mprpcheader.pb.cc.i
+
+mprpcheader.pb.s: mprpcheader.pb.cc.s
+.PHONY : mprpcheader.pb.s
+
+# target to generate assembly for a file
+mprpcheader.pb.cc.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.s
+.PHONY : mprpcheader.pb.cc.s
+
+mprpcprovider.o: mprpcprovider.cpp.o
+.PHONY : mprpcprovider.o
+
+# target to build an object file
+mprpcprovider.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o
+.PHONY : mprpcprovider.cpp.o
+
+mprpcprovider.i: mprpcprovider.cpp.i
+.PHONY : mprpcprovider.i
+
+# target to preprocess a source file
+mprpcprovider.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.i
+.PHONY : mprpcprovider.cpp.i
+
+mprpcprovider.s: mprpcprovider.cpp.s
+.PHONY : mprpcprovider.s
+
+# target to generate assembly for a file
+mprpcprovider.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.s
+.PHONY : mprpcprovider.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +306,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... mprpc"
+	@echo "... logger.o"
+	@echo "... logger.i"
+	@echo "... logger.s"
+	@echo "... mprpcapplication.o"
+	@echo "... mprpcapplication.i"
+	@echo "... mprpcapplication.s"
+	@echo "... mprpcchannel.o"
+	@echo "... mprpcchannel.i"
+	@echo "... mprpcchannel.s"
+	@echo "... mprpcconfig.o"
+	@echo "... mprpcconfig.i"
+	@echo "... mprpcconfig.s"
+	@echo "... mprpccontroller.o"
+	@echo "... mprpccontroller.i"
+	@echo "... mprpccontroller.s"
+	@echo "... mprpcheader.pb.o"
+	@echo "... mprpcheader.pb.i"
+	@echo "... mprpcheader.pb.s"
+	@echo "... mprpcprovider.o"
+	@echo "... mprpcprovider.i"
+	@echo "... mprpcprovider.s"
 .PHONY : help
 
 

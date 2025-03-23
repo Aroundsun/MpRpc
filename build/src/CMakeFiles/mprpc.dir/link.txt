@@ -1,0 +1,2 @@
+/usr/bin/aarch64-linux-gnu-ar qc /home/xhy/mprpc/lib/libmprpc.a CMakeFiles/mprpc.dir/mprpcapplication.cpp.o CMakeFiles/mprpc.dir/mprpcconfig.cpp.o CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o CMakeFiles/mprpc.dir/mprpcprovider.cpp.o CMakeFiles/mprpc.dir/mprpcchannel.cpp.o CMakeFiles/mprpc.dir/mprpccontroller.cpp.o CMakeFiles/mprpc.dir/logger.cpp.o
+/usr/bin/aarch64-linux-gnu-ranlib /home/xhy/mprpc/lib/libmprpc.a

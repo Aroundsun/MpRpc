@@ -48,6 +48,8 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     //header_size(4字节) header_str arg_str  都有了 组装请求
     //固定header_size 为4字节 确保解析时始终知道前 4 字节是头部大小
     std::string send_rpc_request;
+    //将header_size 转换成网路字节序
+    rpc_header_size = htons(rpc_header_size);
     send_rpc_request.insert(0,(char*)rpc_header_size,4);
     send_rpc_request+=rpc_header_str;
     send_rpc_request+=arg_str;
@@ -85,7 +87,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     //接受响应
     char recv_buf[1024] = {0};
     int recv_size = 0;
-    if(-1 == recv(clientfd,recv,1024,0))
+    if(-1 == recv(clientfd,recv_buf,1024,0))
     {
         //接收请求失败
         close(clientfd);
@@ -102,8 +104,4 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     //关闭连接
     close(clientfd);
     
-
-
-
-
 }
