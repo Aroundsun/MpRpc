@@ -10,6 +10,7 @@ public:
     bool Login(std::string name, std::string pwd)
     {
         std::cout << "name:" << name << " pwd:" << pwd << std::endl;
+        return true;
     }
     void Login(google::protobuf::RpcController *controller,
                const ::example::LoginRequest *request,
@@ -21,8 +22,9 @@ public:
         std::string pwd = request->pwd();
 
         // 做本地业务
+        std::cout<<"本地业务开始......."<<std::endl;
         bool login_result = Login(name, pwd); 
-
+        std::cout<<"本地业务执行结束..."<<std::endl;
         // 把响应写入  包括错误码、错误消息、返回值
         example::ResultCode *code = response->mutable_result();
         code->set_errcode(0);
@@ -38,6 +40,7 @@ int main(int args, char **argv)
 {
     // 初始化框架
     MprpcApplication::init(args, argv);
+
     // 注册发布服务服务对象
     MprpcProvider provider;
     provider.NotifyService(new UserService());

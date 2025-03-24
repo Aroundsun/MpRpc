@@ -1,4 +1,3 @@
-#pragma once
 #include "mpcrpcprovider.h"
 
 void MprpcProvider::NotifyService(google::protobuf::Service *service)
@@ -23,6 +22,7 @@ void MprpcProvider::NotifyService(google::protobuf::Service *service)
 
         LOG_INFO("method_name:%s", method_name.c_str());
     }
+
     service_info.m_service = service;
     m_serviceMap.insert({service_name, service_info});
 }
@@ -44,6 +44,7 @@ void MprpcProvider::Run()
     const std::string rpcserverIp = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
     const uint16_t rpcserverPort = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
     muduo::net::InetAddress address(rpcserverIp, rpcserverPort);
+    std::cout << "lianjie"<<std::endl; 
 
     // 创建TCP Server 对象
     muduo::net::TcpServer server(&m_eventLoop, address, "mprpcprovider");
@@ -72,10 +73,12 @@ void MprpcProvider::OnConnection(const muduo::net::TcpConnectionPtr &conn)
     if (conn->connected()) // 连接成功 记录日志 记录对端IP：Port
     {
         LOG_INFO("pree{%s} connect OK ", conn->peerAddress().toIpPort());
+
     }
     else
     {
         LOG_ERR("pree{%s} connect faild", conn->peerAddress().toIpPort());
+
         conn->shutdown();
     }
 }
@@ -89,13 +92,14 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
                               muduo::net::Buffer *buffer,
                               muduo::Timestamp receiveTime)
 {
+    std::cout << "收到数据"<<std::endl; 
+
     // 接受Rpc服务请求的字符流
     std::string recv_str = buffer->retrieveAllAsString();
     // 获取header_size (前四个字节)
-    uint16_t header_size;
+    uint32_t header_size;
     recv_str.copy((char *)&header_size, 4, 0);
-    // 从网路字节序列转换成本机字节序
-    header_size = ntohs(header_size);
+
     // 根据header_size 取出header_str
     std::string header_str = recv_str.substr(4, header_size);
     mprpc::MprpcHeader rpcheader;
@@ -115,6 +119,17 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
     }
     // 获取参数字符流
     std::string arg_str = recv_str.substr(4 + header_size, arg_size);
+    std::cout << "收到数据"<<std::endl; 
+
+    // 打印调试信息
+    std::cout << "============================================" << std::endl;
+    std::cout << "header_size: " << header_size << std::endl;
+    std::cout << "rpc_header_str: " << header_str << std::endl;
+    std::cout << "service_name: " << service_name << std::endl;
+    std::cout << "method_name: " << method_name << std::endl;
+    std::cout << "args_str: " << arg_str << std::endl;
+    std::cout << "============================================" << std::endl;
+
     // 获取service 对象 和method 对象
     auto it = m_serviceMap.find(service_name);
     if (it == m_serviceMap.end())
@@ -144,11 +159,10 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
 
     // 绑定响应回调
     google::protobuf::Closure *done = google::protobuf::NewCallback<MprpcProvider, const muduo::net::TcpConnectionPtr &,
-                                                                    google::protobuf::Message *>
-                                                                    (this, &MprpcProvider::SendRpcResponse,
-                                                                         conn, response);
+                                                                    google::protobuf::Message *>(this, &MprpcProvider::SendRpcResponse,
+                                                                                                 conn, response);
 
-    service->CallMethod(methodDec,nullptr,request,response,done);
+    service->CallMethod(methodDec, nullptr, request, response, done);
 }
 
 // Closure的回调操作，用于序列化rpc的响应和网络发送

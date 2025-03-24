@@ -1,3 +1,5 @@
+#pragma once
+
 #include <muduo/net/TcpServer.h>
 #include <muduo/net/TcpConnection.h>
 #include <muduo/net/EventLoop.h>

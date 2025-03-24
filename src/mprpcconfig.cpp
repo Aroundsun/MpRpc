@@ -1,8 +1,11 @@
 #include"mprpcconfig.h"
-
+#include<iostream>
 void MprpcConfig::LoadConfigFile(const std::string& config_file)
 {
+
+
     std::fstream file(config_file);
+
     std::string line;
     if(!file)
     {
@@ -53,7 +56,7 @@ std::string MprpcConfig::Load(const std::string& key)
 }
 
 // 去掉字符串前后的空格
-static void Trim(std::string &src_buf)
+void MprpcConfig::Trim(std::string &src_buf)
 {
     int idx = src_buf.find_first_not_of(' ');
     if (idx != -1)
