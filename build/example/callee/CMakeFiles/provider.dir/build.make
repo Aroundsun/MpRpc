@@ -73,29 +73,29 @@ example/callee/CMakeFiles/provider.dir/userservice.cpp.o: example/callee/CMakeFi
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: /home/xhy/mprpc/example/callee/userservice.cpp
 example/callee/CMakeFiles/provider.dir/userservice.cpp.o: example/callee/CMakeFiles/provider.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object example/callee/CMakeFiles/provider.dir/userservice.cpp.o"
-	cd /home/xhy/mprpc/build/example/callee && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/userservice.cpp.o -MF CMakeFiles/provider.dir/userservice.cpp.o.d -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/xhy/mprpc/example/callee/userservice.cpp
+	cd /home/xhy/mprpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/userservice.cpp.o -MF CMakeFiles/provider.dir/userservice.cpp.o.d -o CMakeFiles/provider.dir/userservice.cpp.o -c /home/xhy/mprpc/example/callee/userservice.cpp
 
 example/callee/CMakeFiles/provider.dir/userservice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/provider.dir/userservice.cpp.i"
-	cd /home/xhy/mprpc/build/example/callee && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/example/callee/userservice.cpp > CMakeFiles/provider.dir/userservice.cpp.i
+	cd /home/xhy/mprpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/example/callee/userservice.cpp > CMakeFiles/provider.dir/userservice.cpp.i
 
 example/callee/CMakeFiles/provider.dir/userservice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/provider.dir/userservice.cpp.s"
-	cd /home/xhy/mprpc/build/example/callee && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/example/callee/userservice.cpp -o CMakeFiles/provider.dir/userservice.cpp.s
+	cd /home/xhy/mprpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/example/callee/userservice.cpp -o CMakeFiles/provider.dir/userservice.cpp.s
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: example/callee/CMakeFiles/provider.dir/flags.make
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: /home/xhy/mprpc/example/user.pb.cc
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o: example/callee/CMakeFiles/provider.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o"
-	cd /home/xhy/mprpc/build/example/callee && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o -MF CMakeFiles/provider.dir/__/user.pb.cc.o.d -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/xhy/mprpc/example/user.pb.cc
+	cd /home/xhy/mprpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT example/callee/CMakeFiles/provider.dir/__/user.pb.cc.o -MF CMakeFiles/provider.dir/__/user.pb.cc.o.d -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/xhy/mprpc/example/user.pb.cc
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/provider.dir/__/user.pb.cc.i"
-	cd /home/xhy/mprpc/build/example/callee && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/example/user.pb.cc > CMakeFiles/provider.dir/__/user.pb.cc.i
+	cd /home/xhy/mprpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/example/user.pb.cc > CMakeFiles/provider.dir/__/user.pb.cc.i
 
 example/callee/CMakeFiles/provider.dir/__/user.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/provider.dir/__/user.pb.cc.s"
-	cd /home/xhy/mprpc/build/example/callee && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/example/user.pb.cc -o CMakeFiles/provider.dir/__/user.pb.cc.s
+	cd /home/xhy/mprpc/build/example/callee && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/example/user.pb.cc -o CMakeFiles/provider.dir/__/user.pb.cc.s
 
 # Object files for target provider
 provider_OBJECTS = \

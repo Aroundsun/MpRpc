@@ -44,7 +44,6 @@ void MprpcProvider::Run()
     const std::string rpcserverIp = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
     const uint16_t rpcserverPort = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
     muduo::net::InetAddress address(rpcserverIp, rpcserverPort);
-    std::cout << "lianjie"<<std::endl; 
 
     // 创建TCP Server 对象
     muduo::net::TcpServer server(&m_eventLoop, address, "mprpcprovider");
@@ -61,7 +60,7 @@ void MprpcProvider::Run()
                   std::placeholders::_2,
                   std::placeholders::_3));
 
-    LOG_INFO("mprpcserver start server Ip:%s, Port:%d", rpcserverIp, rpcserverPort);
+    LOG_INFO("mprpcserver start server Ip:%s, Port:%d", rpcserverIp.c_str(), rpcserverPort);
 
     // 启动网络服务
     server.start();
@@ -72,12 +71,12 @@ void MprpcProvider::OnConnection(const muduo::net::TcpConnectionPtr &conn)
 {
     if (conn->connected()) // 连接成功 记录日志 记录对端IP：Port
     {
-        LOG_INFO("pree{%s} connect OK ", conn->peerAddress().toIpPort());
+        LOG_INFO("pree{%s} connect OK ", conn->peerAddress().toIpPort().c_str());
 
     }
     else
     {
-        LOG_ERR("pree{%s} connect faild", conn->peerAddress().toIpPort());
+        LOG_ERR("pree{%s} connect faild", conn->peerAddress().toIpPort().c_str());
 
         conn->shutdown();
     }
@@ -92,7 +91,7 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
                               muduo::net::Buffer *buffer,
                               muduo::Timestamp receiveTime)
 {
-    std::cout << "收到数据"<<std::endl; 
+
 
     // 接受Rpc服务请求的字符流
     std::string recv_str = buffer->retrieveAllAsString();
@@ -114,33 +113,24 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
     }
     else // 序列化失败
     {
-        LOG_ERR("rpc_header_str:%s  parse error!!!", header_str);
+        LOG_ERR("rpc_header_str:%s  parse error!!!", header_str.c_str());
         return;
     }
     // 获取参数字符流
     std::string arg_str = recv_str.substr(4 + header_size, arg_size);
-    std::cout << "收到数据"<<std::endl; 
-
-    // 打印调试信息
-    std::cout << "============================================" << std::endl;
-    std::cout << "header_size: " << header_size << std::endl;
-    std::cout << "rpc_header_str: " << header_str << std::endl;
-    std::cout << "service_name: " << service_name << std::endl;
-    std::cout << "method_name: " << method_name << std::endl;
-    std::cout << "args_str: " << arg_str << std::endl;
-    std::cout << "============================================" << std::endl;
 
     // 获取service 对象 和method 对象
     auto it = m_serviceMap.find(service_name);
     if (it == m_serviceMap.end())
     {
-        LOG_ERR("service_name:%s  is not exist");
+        LOG_ERR("service_name:%s  is not exist",service_name.c_str());
         return;
     }
     auto mit = it->second.m_serviceMethondMap.find(method_name);
     if (mit == it->second.m_serviceMethondMap.end())
     {
-        LOG_ERR("method_name:%s  is not exist");
+        LOG_ERR("method_name:%s  is not exist",method_name.c_str());
+
         return;
     }
     // 获取服务对象
@@ -150,11 +140,12 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
 
     // 动态创建Rpc 请求对象request
     google::protobuf::Message *request = service->GetRequestPrototype(methodDec).New();
-    if (request->ParseFromString(arg_str)) // 请求解析失败
+    if (!request->ParseFromString(arg_str)) // 请求解析失败
     {
-        LOG_ERR("request qarse error request_str:%s", arg_str);
+        LOG_ERR("request qarse error request_str:%s", arg_str.c_str());
         return;
     }
+
     google::protobuf::Message *response = service->GetResponsePrototype(methodDec).New();
 
     // 绑定响应回调

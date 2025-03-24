@@ -19,6 +19,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     std::string arg_str;
     if(request->SerializeToString(&arg_str))
     {
+    
         arg_size = arg_str.size();
     }
     else
@@ -52,15 +53,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     send_rpc_request.insert(0,std::string((char*)&rpc_header_size,4));
     send_rpc_request+=rpc_header_str;
     send_rpc_request+=arg_str;
-    // 打印调试信息
-    std::cout << "============================================" << std::endl;
-    std::cout << "header_size: " << rpc_header_size << std::endl; 
-    std::cout << "rpc_header_str: " << rpc_header_str << std::endl; 
-    std::cout << "service_name: " << service_name << std::endl; 
-    std::cout << "method_name: " << method_name << std::endl; 
-    std::cout << "args_str: " << arg_str << std::endl; 
-    std::cout << "============================================" << std::endl;
-    std::cout<<arg_str<<arg_str.size()<<std::endl;
+    
 
     // 使用tcp编程，完成rpc方法的远程调用
     int clientfd = socket(AF_INET,SOCK_STREAM,0);
@@ -103,7 +96,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor *method,
     //接受响应
     char recv_buf[1024] = {0};
     int recv_size = 0;
-    if(-1 == recv(clientfd,recv_buf,1024,0))
+    if(-1 ==( recv_size = recv(clientfd,recv_buf,1024,0)))
     {
         //接收请求失败
         close(clientfd);

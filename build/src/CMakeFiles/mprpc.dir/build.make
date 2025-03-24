@@ -73,99 +73,99 @@ src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o: src/CMakeFiles/mprpc.dir/flags.
 src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o: /home/xhy/mprpc/src/mprpcapplication.cpp
 src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o -MF CMakeFiles/mprpc.dir/mprpcapplication.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcapplication.cpp.o -c /home/xhy/mprpc/src/mprpcapplication.cpp
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.o -MF CMakeFiles/mprpc.dir/mprpcapplication.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcapplication.cpp.o -c /home/xhy/mprpc/src/mprpcapplication.cpp
 
 src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcapplication.cpp.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcapplication.cpp > CMakeFiles/mprpc.dir/mprpcapplication.cpp.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcapplication.cpp > CMakeFiles/mprpc.dir/mprpcapplication.cpp.i
 
 src/CMakeFiles/mprpc.dir/mprpcapplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcapplication.cpp.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcapplication.cpp -o CMakeFiles/mprpc.dir/mprpcapplication.cpp.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcapplication.cpp -o CMakeFiles/mprpc.dir/mprpcapplication.cpp.s
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o: /home/xhy/mprpc/src/mprpcconfig.cpp
 src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o -MF CMakeFiles/mprpc.dir/mprpcconfig.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcconfig.cpp.o -c /home/xhy/mprpc/src/mprpcconfig.cpp
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.o -MF CMakeFiles/mprpc.dir/mprpcconfig.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcconfig.cpp.o -c /home/xhy/mprpc/src/mprpcconfig.cpp
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcconfig.cpp.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcconfig.cpp > CMakeFiles/mprpc.dir/mprpcconfig.cpp.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcconfig.cpp > CMakeFiles/mprpc.dir/mprpcconfig.cpp.i
 
 src/CMakeFiles/mprpc.dir/mprpcconfig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcconfig.cpp.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcconfig.cpp -o CMakeFiles/mprpc.dir/mprpcconfig.cpp.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcconfig.cpp -o CMakeFiles/mprpc.dir/mprpcconfig.cpp.s
 
 src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o: /home/xhy/mprpc/src/mprpcheader.pb.cc
 src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o -MF CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o.d -o CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o -c /home/xhy/mprpc/src/mprpcheader.pb.cc
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o -MF CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o.d -o CMakeFiles/mprpc.dir/mprpcheader.pb.cc.o -c /home/xhy/mprpc/src/mprpcheader.pb.cc
 
 src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcheader.pb.cc.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcheader.pb.cc > CMakeFiles/mprpc.dir/mprpcheader.pb.cc.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcheader.pb.cc > CMakeFiles/mprpc.dir/mprpcheader.pb.cc.i
 
 src/CMakeFiles/mprpc.dir/mprpcheader.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcheader.pb.cc.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcheader.pb.cc -o CMakeFiles/mprpc.dir/mprpcheader.pb.cc.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcheader.pb.cc -o CMakeFiles/mprpc.dir/mprpcheader.pb.cc.s
 
 src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o: /home/xhy/mprpc/src/mprpcprovider.cpp
 src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o -MF CMakeFiles/mprpc.dir/mprpcprovider.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcprovider.cpp.o -c /home/xhy/mprpc/src/mprpcprovider.cpp
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o -MF CMakeFiles/mprpc.dir/mprpcprovider.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcprovider.cpp.o -c /home/xhy/mprpc/src/mprpcprovider.cpp
 
 src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcprovider.cpp.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcprovider.cpp > CMakeFiles/mprpc.dir/mprpcprovider.cpp.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcprovider.cpp > CMakeFiles/mprpc.dir/mprpcprovider.cpp.i
 
 src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcprovider.cpp.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcprovider.cpp -o CMakeFiles/mprpc.dir/mprpcprovider.cpp.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcprovider.cpp -o CMakeFiles/mprpc.dir/mprpcprovider.cpp.s
 
 src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o: /home/xhy/mprpc/src/mprpcchannel.cpp
 src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o -MF CMakeFiles/mprpc.dir/mprpcchannel.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcchannel.cpp.o -c /home/xhy/mprpc/src/mprpcchannel.cpp
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o -MF CMakeFiles/mprpc.dir/mprpcchannel.cpp.o.d -o CMakeFiles/mprpc.dir/mprpcchannel.cpp.o -c /home/xhy/mprpc/src/mprpcchannel.cpp
 
 src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpcchannel.cpp.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcchannel.cpp > CMakeFiles/mprpc.dir/mprpcchannel.cpp.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpcchannel.cpp > CMakeFiles/mprpc.dir/mprpcchannel.cpp.i
 
 src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpcchannel.cpp.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcchannel.cpp -o CMakeFiles/mprpc.dir/mprpcchannel.cpp.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpcchannel.cpp -o CMakeFiles/mprpc.dir/mprpcchannel.cpp.s
 
 src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o: /home/xhy/mprpc/src/mprpccontroller.cpp
 src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o -MF CMakeFiles/mprpc.dir/mprpccontroller.cpp.o.d -o CMakeFiles/mprpc.dir/mprpccontroller.cpp.o -c /home/xhy/mprpc/src/mprpccontroller.cpp
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.o -MF CMakeFiles/mprpc.dir/mprpccontroller.cpp.o.d -o CMakeFiles/mprpc.dir/mprpccontroller.cpp.o -c /home/xhy/mprpc/src/mprpccontroller.cpp
 
 src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/mprpccontroller.cpp.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpccontroller.cpp > CMakeFiles/mprpc.dir/mprpccontroller.cpp.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/mprpccontroller.cpp > CMakeFiles/mprpc.dir/mprpccontroller.cpp.i
 
 src/CMakeFiles/mprpc.dir/mprpccontroller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/mprpccontroller.cpp.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpccontroller.cpp -o CMakeFiles/mprpc.dir/mprpccontroller.cpp.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/mprpccontroller.cpp -o CMakeFiles/mprpc.dir/mprpccontroller.cpp.s
 
 src/CMakeFiles/mprpc.dir/logger.cpp.o: src/CMakeFiles/mprpc.dir/flags.make
 src/CMakeFiles/mprpc.dir/logger.cpp.o: /home/xhy/mprpc/src/logger.cpp
 src/CMakeFiles/mprpc.dir/logger.cpp.o: src/CMakeFiles/mprpc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xhy/mprpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/mprpc.dir/logger.cpp.o"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/logger.cpp.o -MF CMakeFiles/mprpc.dir/logger.cpp.o.d -o CMakeFiles/mprpc.dir/logger.cpp.o -c /home/xhy/mprpc/src/logger.cpp
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/mprpc.dir/logger.cpp.o -MF CMakeFiles/mprpc.dir/logger.cpp.o.d -o CMakeFiles/mprpc.dir/logger.cpp.o -c /home/xhy/mprpc/src/logger.cpp
 
 src/CMakeFiles/mprpc.dir/logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mprpc.dir/logger.cpp.i"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/logger.cpp > CMakeFiles/mprpc.dir/logger.cpp.i
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xhy/mprpc/src/logger.cpp > CMakeFiles/mprpc.dir/logger.cpp.i
 
 src/CMakeFiles/mprpc.dir/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mprpc.dir/logger.cpp.s"
-	cd /home/xhy/mprpc/build/src && /usr/bin/aarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/logger.cpp -o CMakeFiles/mprpc.dir/logger.cpp.s
+	cd /home/xhy/mprpc/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xhy/mprpc/src/logger.cpp -o CMakeFiles/mprpc.dir/logger.cpp.s
 
 # Object files for target mprpc
 mprpc_OBJECTS = \

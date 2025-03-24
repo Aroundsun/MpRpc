@@ -1,0 +1,25 @@
+
+3:40:20 =>[info] service_name:UserServiceRpc
+3:40:20 =>[info] method_name:Login
+3:40:20 =>[info] mprpcserver start server Ip:127.0.0.1, Port:8000
+3:40:20 =>[info] pree{127.0.0.1:48858} connect OK 
+3:40:22 =>[error] pree{127.0.0.1:48858} connect faild
+3:41:7 =>[info] service_name:UserServiceRpc
+3:41:7 =>[info] method_name:Login
+3:41:7 =>[info] mprpcserver start server Ip:127.0.0.1, Port:8000
+3:41:7 =>[info] pree{127.0.0.1:36230} connect OK 
+3:41:12 =>[error] pree{127.0.0.1:36230} connect faild
+3:44:47 =>[info] service_name:UserServiceRpc
+3:44:47 =>[info] method_name:Login
+3:44:47 =>[info] mprpcserver start server Ip:127.0.0.1, Port:8000
+3:44:47 =>[info] pree{127.0.0.1:42640} connect OK 
+3:47:45 =>[info] service_name:UserServiceRpc
+3:47:45 =>[info] method_name:Login
+3:47:45 =>[info] mprpcserver start server Ip:127.0.0.1, Port:8000
+3:47:45 =>[info] pree{127.0.0.1:37646} connect OK 
+3:47:51 =>[error] pree{127.0.0.1:37646} connect faild
+3:49:30 =>[info] service_name:UserServiceRpc
+3:49:30 =>[info] method_name:Login
+3:49:30 =>[info] mprpcserver start server Ip:127.0.0.1, Port:8000
+3:49:30 =>[info] pree{127.0.0.1:37438} connect OK 
+3:49:31 =>[error] pree{127.0.0.1:37438} connect faild

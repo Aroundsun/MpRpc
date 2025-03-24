@@ -39,6 +39,6 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/aarch64-linux-gnu-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

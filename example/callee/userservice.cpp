@@ -14,24 +14,25 @@ public:
     }
     void Login(google::protobuf::RpcController *controller,
                const ::example::LoginRequest *request,
-               ::example::LoginResponse *response,
-               ::google::protobuf::Closure *done)
+               example::LoginResponse *response,
+               google::protobuf::Closure *done)
     {
         // 框架给业务上报了请求参数LoginRequest，应用获取相应数据做本地业务
         std::string name = request->name();
         std::string pwd = request->pwd();
 
         // 做本地业务
-        std::cout<<"本地业务开始......."<<std::endl;
+        std::cout<<"UserService::Login业务开始......."<<std::endl;
         bool login_result = Login(name, pwd); 
-        std::cout<<"本地业务执行结束..."<<std::endl;
+        std::cout<<"UserService::Login业务执行结束..."<<std::endl;
         // 把响应写入  包括错误码、错误消息、返回值
         example::ResultCode *code = response->mutable_result();
         code->set_errcode(0);
         code->set_errmsg("");
         response->set_sucess(login_result);
+        std::cout<<login_result<<std::endl;
 
-        // 执行回调操作   执行响应对象数据的序列化和网络发送（都是由框架来完成的）
+        // 执行响应回调
         done->Run();
     }
 };
