@@ -13,6 +13,7 @@
 #include"mprpcheader.pb.h"
 #include"mprpcconfig.h"
 #include"mprpcapplication.h"
+#include"zookeeperuilt.h"
 class MprpcChannel : public google::protobuf::RpcChannel
 {
 public:

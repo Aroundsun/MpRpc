@@ -298,6 +298,30 @@ mprpcprovider.cpp.s:
 	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.s
 .PHONY : mprpcprovider.cpp.s
 
+zookeeperuilt.o: zookeeperuilt.cpp.o
+.PHONY : zookeeperuilt.o
+
+# target to build an object file
+zookeeperuilt.cpp.o:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperuilt.cpp.o
+.PHONY : zookeeperuilt.cpp.o
+
+zookeeperuilt.i: zookeeperuilt.cpp.i
+.PHONY : zookeeperuilt.i
+
+# target to preprocess a source file
+zookeeperuilt.cpp.i:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperuilt.cpp.i
+.PHONY : zookeeperuilt.cpp.i
+
+zookeeperuilt.s: zookeeperuilt.cpp.s
+.PHONY : zookeeperuilt.s
+
+# target to generate assembly for a file
+zookeeperuilt.cpp.s:
+	cd /home/xhy/mprpc/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperuilt.cpp.s
+.PHONY : zookeeperuilt.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -328,6 +352,9 @@ help:
 	@echo "... mprpcprovider.o"
 	@echo "... mprpcprovider.i"
 	@echo "... mprpcprovider.s"
+	@echo "... zookeeperuilt.o"
+	@echo "... zookeeperuilt.i"
+	@echo "... zookeeperuilt.s"
 .PHONY : help
 
 

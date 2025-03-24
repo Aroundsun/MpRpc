@@ -363,4 +363,11 @@ src/CMakeFiles/mprpc.dir/mprpcprovider.cpp.o: \
  /usr/include/google/protobuf/message.h \
  /usr/include/google/protobuf/map.h \
  /usr/include/google/protobuf/map_type_handler.h \
- /usr/include/google/protobuf/extension_set.h /usr/include/c++/14/cassert
+ /usr/include/google/protobuf/extension_set.h /usr/include/c++/14/cassert \
+ /home/xhy/mprpc/src/include/zookeeperuilt.h \
+ /usr/include/zookeeper/zookeeper.h \
+ /usr/include/aarch64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
+ /usr/include/zookeeper/zookeeper_version.h \
+ /usr/include/zookeeper/recordio.h \
+ /usr/include/zookeeper/zookeeper.jute.h /usr/include/semaphore.h \
+ /usr/include/aarch64-linux-gnu/bits/semaphore.h

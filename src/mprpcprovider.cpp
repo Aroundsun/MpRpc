@@ -59,6 +59,26 @@ void MprpcProvider::Run()
                   std::placeholders::_1,
                   std::placeholders::_2,
                   std::placeholders::_3));
+    // 把当前rpc节点上要发布的服务全部注册到zk上面，让rpc client可以从zk上发现服务
+    // session timeout   30s     zkclient 网络I/O线程  1/3 * timeout 时间发送ping消息
+    zkCli zkClient;
+    zkClient.Start();
+    // service_name为永久性节点    method_name为临时性节点
+    for (auto &sp : m_serviceMap)
+    {
+        // /service_name   /UserServiceRpc
+        std::string service_path = "/" + sp.first;
+        zkClient.Create(service_path.c_str(), nullptr, 0);
+        for (auto &mp : sp.second.m_serviceMethondMap)
+        {
+            // /service_name/method_name   /UserServiceRpc/Login 存储当前这个rpc服务节点主机的ip和port
+            std::string method_path = service_path + "/" + mp.first;
+            char method_path_data[128] = {0};
+            sprintf(method_path_data, "%s:%d", rpcserverIp .c_str(), rpcserverPort );
+            // ZOO_EPHEMERAL表示znode是一个临时性节点
+            zkClient.Create(method_path.c_str(), method_path_data, strlen(method_path_data), ZOO_EPHEMERAL);
+        }
+    }
 
     LOG_INFO("mprpcserver start server Ip:%s, Port:%d", rpcserverIp.c_str(), rpcserverPort);
 
@@ -72,7 +92,6 @@ void MprpcProvider::OnConnection(const muduo::net::TcpConnectionPtr &conn)
     if (conn->connected()) // 连接成功 记录日志 记录对端IP：Port
     {
         LOG_INFO("pree{%s} connect OK ", conn->peerAddress().toIpPort().c_str());
-
     }
     else
     {
@@ -91,7 +110,6 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
                               muduo::net::Buffer *buffer,
                               muduo::Timestamp receiveTime)
 {
-
 
     // 接受Rpc服务请求的字符流
     std::string recv_str = buffer->retrieveAllAsString();
@@ -123,13 +141,13 @@ void MprpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
     auto it = m_serviceMap.find(service_name);
     if (it == m_serviceMap.end())
     {
-        LOG_ERR("service_name:%s  is not exist",service_name.c_str());
+        LOG_ERR("service_name:%s  is not exist", service_name.c_str());
         return;
     }
     auto mit = it->second.m_serviceMethondMap.find(method_name);
     if (mit == it->second.m_serviceMethondMap.end())
     {
-        LOG_ERR("method_name:%s  is not exist",method_name.c_str());
+        LOG_ERR("method_name:%s  is not exist", method_name.c_str());
 
         return;
     }

@@ -13,6 +13,7 @@
 #include "logger.h"
 #include "mprpcapplication.h"
 #include"mprpcheader.pb.h"
+#include"zookeeperuilt.h"
 
 // 发布Rpc 服务的网络对象类
 class MprpcProvider

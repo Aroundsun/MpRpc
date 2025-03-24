@@ -2,6 +2,7 @@
 #include<google/protobuf/service.h>
 #include<google/protobuf/stubs/callback.h>
 #include<string>
+//框架中暂未因为
 class MprpcController: public google::protobuf::RpcController 
 {
 public:

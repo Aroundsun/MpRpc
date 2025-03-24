@@ -10,7 +10,7 @@ void MprpcConfig::LoadConfigFile(const std::string& config_file)
     if(!file)
     {
         //打开文件失败,记录日志
-        LOG_ERR("file:%s open faild",config_file);
+        LOG_ERR("file:%s open faild",config_file.c_str());
         exit(EXIT_FAILURE);
     }
     int colNum = 0;
@@ -27,7 +27,7 @@ void MprpcConfig::LoadConfigFile(const std::string& config_file)
         if(idx == -1)
         {
             //解析文件出错
-            LOG_ERR("file:%s,col:%d faild",config_file,colNum);
+            LOG_ERR("file:%s,col:%d faild",config_file.c_str(),colNum);
             exit(EXIT_FAILURE);
         }
 

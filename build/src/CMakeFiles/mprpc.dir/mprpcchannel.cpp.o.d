@@ -296,4 +296,11 @@ src/CMakeFiles/mprpc.dir/mprpcchannel.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/14/bits/basic_file.h \
  /usr/include/aarch64-linux-gnu/c++/14/bits/c++io.h \
  /usr/include/c++/14/bits/fstream.tcc \
- /home/xhy/mprpc/src/include/mprpcapplication.h
+ /home/xhy/mprpc/src/include/mprpcapplication.h \
+ /home/xhy/mprpc/src/include/zookeeperuilt.h \
+ /usr/include/zookeeper/zookeeper.h \
+ /usr/include/aarch64-linux-gnu/sys/time.h /usr/include/zookeeper/proto.h \
+ /usr/include/zookeeper/zookeeper_version.h \
+ /usr/include/zookeeper/recordio.h \
+ /usr/include/zookeeper/zookeeper.jute.h /usr/include/semaphore.h \
+ /usr/include/aarch64-linux-gnu/bits/semaphore.h
